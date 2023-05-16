@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classen Research Institute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="image.png" alt="" style="text-align: center;" class="image" >
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="contribute.html">Contribute</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <div class="main">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+  
+    <div class="article">
+        <li>
+            <h3><a href="articles/examplearticle.html">Example article 0</a></h3>
+        <p><i>Name - Date</i></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+        </p>
+        </li>
+        
+    </div>
+    <div class="article">
+        <li>
+            <h3><a href="">Example article 1</a></h3>
+        <p><i>Name - Date</i></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+        </p>
+        </li>
+        
+    </div>
+    <div class="article">
+        <li>
+            <h3><a href="">We need communism 2</a></h3>
+        <p><i>Name - Date</i></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+        </p>
+        </li>
+        
+    </div>
+    <div class="article">
+        <li>
+            <h3><a href="">Example article five</a></h3>
+        <p><i>Name - Date</i></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Eaque molestias quibusdam vitae reprehenderit praesentium est accusamus, 
+            officia vero enim, neque repellat tempore quis. Possimus neque, 
+            ipsam ex dolorem atque nostrum?
+        </p>
+        </li>
+
+    </div>
+
+  
+</ul>
+<style>
+    #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 96%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    outline:none;
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width:100%;
+  }
+  
+ 
+  
+  
+</style>
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    </div>
+    
+    
+    <div class="footer">
+        <hr>
+        <div class="conte">
+            <h3 style="font-family:Arial">SITE MAP</h3>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contribute</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Media Gallery</a></li> 
+        <li><a href="">Research</a></li> 
+        <li><a href="">Announcement Board</a></li> 
+        <li><a href="">Terms of Operations</a></li>
+        </div>
+        <div class="conte">
+            <h3 style="font-family:Arial;">CONTACT</h3>
+            <li><a href=""><i>Email</i></a></li>
+            <li><a href=""><i>Telephone</i></a> </li> 
+            <li><a href=""><i>Mailing Address</i></a></li>
+            <hr>
+            <li><a href=""><i>Email</i></a></li>
+            <li><a href=""><i>Telephone</i></a> </li> 
+            <li><a href=""><i>Mailing Address</i></a></li>
+        </div>
+    </div>
+</body>
+</html>

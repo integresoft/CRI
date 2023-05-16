@@ -1,0 +1,103 @@
+body{
+    background:rgb(249, 229, 216);
+    margin:0;
+    padding:10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.nav{
+    padding:10px;
+    text-align:center;
+    
+}
+.main{
+    padding:20px;
+}
+.nav a{
+    color:black;
+    text-decoration: none;
+    padding:5px;
+    font-size:18px;
+    
+}
+.nav a:hover{
+    color:rgb(46, 46, 46);
+}
+.image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+}
+.highlights{
+    padding:50px;
+}
+.article{
+    padding:10px;
+}
+.article a{
+    color:black;
+    text-decoration: none;
+}
+.article a:hover{
+    color:rgb(46, 46, 46);
+}
+.funfact{
+    padding:20px;
+    background:rgb(239, 189, 158);
+}
+.categories{
+    float:left;
+    width:100%;
+}
+.category{
+    padding:40px;
+    border-right:1px solid rgb(46, 46, 46);
+    float:left;
+    width:18.5%;
+}
+.category a{
+    color:black;
+    text-decoration: none;
+    font-size:22px;
+}
+.category a:hover{
+    color:rgb(46, 46, 46);
+}
+.category:hover{
+    background:rgb(246, 212, 192);
+}
+.about{
+    text-align:center;
+}
+.contribute{
+    text-align:center;
+}
+.footer{
+    padding:50px;
+    float:left;
+    width:94%;
+}
+.footer a{
+    text-decoration: none;
+    color:black;
+    padding:5px;
+}
+.footer a:hover{
+    color:rgb(46, 46, 46);
+}
+.footer li{
+    text-decoration: none;
+    list-style-type: none;
+    padding:7px;
+}
+.conte{
+    float:left;
+    padding:15px;
+}
+.article p{
+    font-size:16px;
+}
+.article li{
+    list-style-type: none;
+}
